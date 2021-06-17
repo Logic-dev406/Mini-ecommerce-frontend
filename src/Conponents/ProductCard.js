@@ -8,7 +8,7 @@ function ProductCard({ product }) {
   return (
     <div className="border w-52 rounded overflow-hidden">
       <Link
-        to={`/Shop/${product.slug}`}
+        to={`/products/${product.slug}`}
         key={product.id}
         className="bg-white * hover:shadow-lg h-60 md:h-72 w-36 md:w-44 rounded"
       >

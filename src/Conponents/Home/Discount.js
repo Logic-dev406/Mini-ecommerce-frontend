@@ -8,7 +8,7 @@ const Discount = () => {
       <p className="text-gray-500">
         Last chance to take advantage of our discount!
       </p>
-      <button className="h-10 w-32 rounded-lg my-4 bg-black text-white">
+      <button className="h-10 w-32 rounded-lg my-4 bg-black text-white focus:outline-none">
         Discover Sales
       </button>
     </div>

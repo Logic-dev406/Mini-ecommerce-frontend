@@ -20,7 +20,7 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/products/:id">
+            <Route path="/products/:slug">
               <Product />
             </Route>
           </Switch>
