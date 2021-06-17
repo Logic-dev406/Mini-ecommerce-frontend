@@ -4,6 +4,7 @@ import React from "react";
 import { useAxiosGet } from "../Hooks/HttpRequest";
 import SearchBar from "../Conponents/Home/SearchBar";
 import Banner from "../Conponents/Home/Banner";
+import Trending from "../Conponents/Home/Trending";
 
 function Home() {
   const url = `http://localhost:3000/api/products`;
@@ -37,6 +38,7 @@ function Home() {
     <div className="px-52">
       <SearchBar />
       <Banner />
+      <Trending />
     </div>
   );
 }
