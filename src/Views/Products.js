@@ -54,7 +54,10 @@ function Product() {
             </div>
           </div>
           <div className="bg-transparent h-full w-full md:w-1/2 py-8 px-4 md:px-8">
-            <h1 className="text-xl md:text-3xl font-semibold">
+            <h1 className="text-xl md:text-3xl pb-2 font-semibold">
+              {product.data.data.name}
+            </h1>
+            <h1 className="text-xl md:text-xl text-gray-600 font-semibold">
               {product.data.data.description}
             </h1>
             <div className="border-b my-5"></div>
