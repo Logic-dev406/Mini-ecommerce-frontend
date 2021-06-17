@@ -3,6 +3,7 @@ import React from "react";
 // import ProductCard from "../Conponents/ProductCard";
 import { useAxiosGet } from "../Hooks/HttpRequest";
 import SearchBar from "../Conponents/Home/SearchBar";
+import Banner from "../Conponents/Home/Banner";
 
 function Home() {
   const url = `http://localhost:3000/api/products`;
@@ -35,7 +36,7 @@ function Home() {
   return (
     <div className="px-52">
       <SearchBar />
-      <div></div>
+      <Banner />
     </div>
   );
 }

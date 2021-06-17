@@ -35,7 +35,7 @@ const SearchBar = () => {
       />
       <button
         onClick={handleSearchClicked}
-        className="focus:outline-none bg-primary-dark py-1 px-1 rounded-r"
+        className="focus:outline-none bg-transparent py-1 px-1 rounded-r"
       >
         <SearchIcon className="text-gray-500" />
       </button>
