@@ -3,6 +3,7 @@ import SearchBar from "../Conponents/Home/SearchBar";
 import Banner from "../Conponents/Home/Banner";
 import Trending from "../Conponents/Home/Trending";
 import ProductSection from "../Conponents/Home/ProductSection";
+import Discount from "../Conponents/Home/Discount";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Banner />
       <Trending />
       <ProductSection />
+      <Discount />
     </div>
   );
 }

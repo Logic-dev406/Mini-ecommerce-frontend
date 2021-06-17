@@ -21,10 +21,6 @@ const ProductSection = () => {
     );
   }
 
-  if (products.loading) {
-    content = <Loader></Loader>;
-  }
-
   if (products.data) {
     content = products.data.data.map((product) => (
       <div key={product.id}>
@@ -35,9 +31,13 @@ const ProductSection = () => {
 
   return (
     <div className=" w-full rounded ">
-      <div className=" grid grid-cols-2 md:grid-cols-5 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 bg-transparent md:bg-transparent p-0 md:p-0 mt-5">
-        {content}
-      </div>
+      {products.loading ? (
+        <Loader></Loader>
+      ) : (
+        <div className="w-full h-full justify-center grid grid-cols-2 md:grid-cols-5 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 bg-transparent md:bg-transparent mt-5">
+          {content}
+        </div>
+      )}
     </div>
   );
 };
