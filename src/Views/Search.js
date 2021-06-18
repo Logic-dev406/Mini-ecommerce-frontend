@@ -34,12 +34,12 @@ const Search = () => {
   }, [products, query]);
 
   return (
-    <div className=" px-52 mb-28 w-full  ">
+    <div className=" px-0 md:px-52 mb-28 w-full  ">
       {/* <SearchBar /> */}
       {loading ? (
         <Loader></Loader>
       ) : (
-        <div className="w-full h-full justify-center grid grid-cols-2 md:grid-cols-5 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 bg-transparent md:bg-transparent mt-5">
+        <div className="w-full h-full justify-items-center items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 bg-transparent md:bg-transparent mt-5">
           {filteredProducts.length > 0 &&
             filteredProducts.map((product) => (
               <div key={product.id}>
