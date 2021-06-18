@@ -5,10 +5,10 @@ import Trending from "../Conponents/Home/Trending";
 import ProductSection from "../Conponents/Home/ProductSection";
 import Discount from "../Conponents/Home/Discount";
 
-function Home() {
+function Home({ searchTerm, setSearchTerm }) {
   return (
     <div className="px-52">
-      <SearchBar />
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Banner />
       <Trending />
       <ProductSection />

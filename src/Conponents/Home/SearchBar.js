@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
+import { useHistory } from "react-router";
 
-const SearchBar = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+const SearchBar = ({ searchTerm, setSearchTerm }) => {
+  const history = useHistory();
 
+  // console.log({ searchTerm });
   const handleInput = (e) => {
     const inputText = e.target.value;
     setSearchTerm(inputText);
@@ -11,17 +13,16 @@ const SearchBar = () => {
 
   const handleEnterKeyPress = (e) => {
     if (e.key === "Enter") {
-      console.log(searchTerm);
-      //   history.push(`/Search`);
+      history.push(`/search?query=${searchTerm}`);
       setSearchTerm("");
     }
   };
 
-  const handleSearchClicked = (e) => {
-    console.log(searchTerm);
-    // history.push(`/Search`);
-    setSearchTerm("");
-  };
+  // const handleSearchClicked = (e) => {
+  //   console.log(searchTerm);
+  //   history.push(`/Search`);
+  //   setSearchTerm("");
+  // };
 
   return (
     <div className=" flex items-center px-5 w-full h-10 rounded bg-gray-200">
@@ -34,7 +35,7 @@ const SearchBar = () => {
         placeholder="Search Products"
       />
       <button
-        onClick={handleSearchClicked}
+        // onClick={handleSearchClicked}
         className="focus:outline-none bg-transparent py-1 px-1 rounded-r"
       >
         <SearchIcon className="text-gray-500" />

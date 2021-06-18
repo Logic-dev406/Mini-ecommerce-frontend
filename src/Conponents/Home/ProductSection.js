@@ -9,7 +9,6 @@ const ProductSection = () => {
   const url = `http://localhost:3000/api/products`;
 
   let products = useAxiosGet(url);
-  console.log(products);
 
   let content = null;
 

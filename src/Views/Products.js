@@ -24,7 +24,6 @@ function Product() {
   const url = `http://localhost:3000/api/products/${slug}`;
 
   let product = useAxiosGet(url);
-  console.log(product);
 
   let content = "";
 
