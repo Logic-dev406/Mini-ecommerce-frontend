@@ -11,7 +11,7 @@ function Banner() {
         </div>
       </div>
       <img
-        className="h-full w-52 md:w-full bg-no-repeat bg-center rounded-r-lg bg-header1 bg-cover  "
+        className="h-full w-52 md:w-80 lg:w-full bg-no-repeat bg-center rounded-r-lg bg-header1 bg-cover  "
         src={bannerImg}
         alt="banner"
       />

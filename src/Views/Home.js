@@ -11,8 +11,8 @@ function Home({ searchTerm, setSearchTerm }) {
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Banner />
       <Trending />
-      {/* <ProductSection />
-      <Discount /> */}
+      <ProductSection />
+      {/* <Discount /> */}
     </div>
   );
 }

@@ -6,7 +6,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 
 function ProductCard({ product }) {
   return (
-    <div className="border w-52 rounded overflow-hidden">
+    <div className="border w-36 md:w-52 rounded overflow-hidden">
       <Link
         to={`/products/${product.slug}`}
         key={product.id}
@@ -23,8 +23,8 @@ function ProductCard({ product }) {
             fontSize="small"
           />
         </div>
-        <div className="flex px-2 py-2 items-center justify-between">
-          <h1 className="text-left text-black  font-semibold  ">
+        <div className="flex flex-col md:flex-row px-2 py-2 items-start md:items-center justify-between">
+          <h1 className="text-left text-black  font-semibold ">
             {product.name}
           </h1>
 

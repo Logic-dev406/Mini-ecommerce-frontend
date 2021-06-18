@@ -33,7 +33,7 @@ const ProductSection = () => {
       {products.loading ? (
         <Loader></Loader>
       ) : (
-        <div className="w-full h-full justify-center grid grid-cols-2 md:grid-cols-5 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 bg-transparent md:bg-transparent mt-5">
+        <div className="w-full h-full justify-items-center items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 bg-transparent md:bg-transparent mt-5">
           {content}
         </div>
       )}
