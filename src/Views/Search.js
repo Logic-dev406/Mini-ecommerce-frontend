@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useAxiosGet } from "../Hooks/HttpRequest";
 import Loader from "../Conponents/Loader";
 import ProductCard from "../Conponents/ProductCard";
-// import SearchBar from "../Conponents/Home/SearchBar";
+import { APIUrl } from "../config/config";
 
 const Search = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const url = `http://localhost:3000/api/products`;
+  const url = `${APIUrl}/api/products`;
   const res = useAxiosGet(url);
   const products = res && res.data ? res.data.data : [];
   const queryString = window.location.search;
@@ -35,7 +35,6 @@ const Search = () => {
 
   return (
     <div className=" px-0 md:px-52 mb-28 w-full  ">
-      {/* <SearchBar /> */}
       {loading ? (
         <Loader></Loader>
       ) : (

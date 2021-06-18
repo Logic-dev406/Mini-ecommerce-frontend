@@ -6,6 +6,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import NumberFormat from "react-number-format";
+import { APIUrl } from "../config/config";
 
 function Product() {
   // const [isMobile, setisMobile] = useState(
@@ -21,7 +22,7 @@ function Product() {
   const handleOnclick = () => {};
 
   const { slug } = useParams();
-  const url = `http://localhost:3000/api/products/${slug}`;
+  const url = `${APIUrl}/api/products/${slug}`;
 
   let product = useAxiosGet(url);
 
