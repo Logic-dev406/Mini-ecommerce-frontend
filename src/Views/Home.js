@@ -7,12 +7,12 @@ import Discount from "../Conponents/Home/Discount";
 
 function Home({ searchTerm, setSearchTerm }) {
   return (
-    <div className="px-52">
+    <div className="px-0 md:px-20 lg:px-52">
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Banner />
-      <Trending />
+      {/* <Trending />
       <ProductSection />
-      <Discount />
+      <Discount /> */}
     </div>
   );
 }

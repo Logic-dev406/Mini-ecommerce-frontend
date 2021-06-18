@@ -17,6 +17,7 @@ const Search = () => {
 
   useEffect(() => {
     if (query && products.length > 0) {
+      // eslint-disable-next-line
       const content = products.filter((product) => {
         if (query === "") {
           return product;

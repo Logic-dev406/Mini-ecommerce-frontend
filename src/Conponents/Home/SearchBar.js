@@ -18,12 +18,6 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
     }
   };
 
-  // const handleSearchClicked = (e) => {
-  //   console.log(searchTerm);
-  //   history.push(`/Search`);
-  //   setSearchTerm("");
-  // };
-
   return (
     <div className=" flex items-center px-5 w-full h-10 rounded bg-gray-200">
       <input
