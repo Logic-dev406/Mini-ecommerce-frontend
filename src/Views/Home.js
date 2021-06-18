@@ -12,7 +12,7 @@ function Home({ searchTerm, setSearchTerm }) {
       <Banner />
       <Trending />
       <ProductSection />
-      {/* <Discount /> */}
+      <Discount />
     </div>
   );
 }
