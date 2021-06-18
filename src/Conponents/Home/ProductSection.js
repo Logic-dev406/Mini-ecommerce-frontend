@@ -2,11 +2,12 @@ import React from "react";
 import { useAxiosGet } from "../../Hooks/HttpRequest";
 import Loader from "../Loader";
 import ProductCard from "../ProductCard";
+import { APIUrl } from "../../config/config";
 // import { Link } from "react-router-dom";
 // import NumberFormat from "react-number-format";
 
 const ProductSection = () => {
-  const url = `http://localhost:3000/api/products`;
+  const url = `${APIUrl}/api/products`;
 
   let products = useAxiosGet(url);
 
