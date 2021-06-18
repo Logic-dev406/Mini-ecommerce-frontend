@@ -42,7 +42,7 @@ function Product() {
   if (product.data) {
     return (content = (
       <div className="flex flex-col items-center h-full w-full mb-24">
-        <div className="flex md:flex-row py-10 flex-col items-center justify-center md:justify-between mx-0 md:mx-4 w-full md:w-9/12 bg-gray-100 my-8">
+        <div className="flex md:flex-row pb-10 pt-5 flex-col items-center justify-center md:justify-between w-full md:w-9/12 bg-gray-100 md:bg-gray-100 my-8">
           <div key={product.data.data.id}>
             <div className=" md:ml-32 ">
               <img
